@@ -5,8 +5,7 @@ async function takeScreenshot(tokenId) {
   // Launch a headless browser
   const browser = await puppeteer.launch({ 
     'args' : [
-      '--no-sandbox',
-      '--disable-setuid-sandbox'
+      '--no-sandbox'
     ] ,
     headless: true });
 
